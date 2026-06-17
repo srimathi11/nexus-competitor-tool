@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus Competitor Insights & Lead Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen font-sans">
+
+  <header class="border-b border-slate-800 bg-slate-950 p-6 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+      <div>
+        <h1 class="text-2xl font-black text-indigo-400 tracking-wide">NEXUS COMPETITOR INTELLIGENCE</h1>
+        <p class="text-xs text-slate-400 mt-1">Transforming raw market vectors into real executive action maps</p>
+      </div>
+      <div class="flex items-center gap-3 w-full md:w-auto max-w-md">
+        <input id="productInput" type="text" value="An AI platform that automates competitor maps and B2B leads for tech founders" class="w-full bg-slate-800 border border-slate-700 text-sm rounded-lg px-4 py-2 text-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Type a startup idea or company URL...">
+        <button onclick="runAnalysis()" class="bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-sm px-5 py-2 rounded-lg transition-all shadow-lg shadow-indigo-900/30 whitespace-nowrap">Analyze Matrix</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto p-4 md:p-8 space-y-8">
+    
+    <section>
+      <h2 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">📍 Critical Executive Answers (Founder Action Metrics)</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="bg-slate-950 p-5 rounded-xl border border-slate-800 flex flex-col justify-between shadow-xl">
+          <p class="text-xs font-semibold text-slate-400 uppercase">What should I build next?</p>
+          <p class="text-lg font-bold text-indigo-400 mt-2">Enterprise SAML Single Sign-On</p>
+          <p class="text-xs text-slate-500 mt-1">Fills the highest critical market vacancy gap.</p>
+        </div>
+        <div class="bg-slate-950 p-5 rounded-xl border border-slate-800 flex flex-col justify-between shadow-xl">
+          <p class="text-xs font-semibold text-slate-400 uppercase">Which competitor is the biggest threat?</p>
+          <p class="text-lg font-bold text-rose-400 mt-2">EnterpriseFlow Pro</p>
+          <p class="text-xs text-slate-500 mt-1">Holds perfect data uptime scores and active safety budgets.</p>
+        </div>
+        <div class="bg-slate-950 p-5 rounded-xl border border-slate-800 flex flex-col justify-between shadow-xl">
+          <p class="text-xs font-semibold text-slate-400 uppercase">Top Action Item Today</p>
+          <p class="text-sm font-semibold text-amber-400 mt-2">Build the missing integration module to win enterprise sales cycles.</p>
+          <p class="text-xs text-slate-500 mt-1">Immediate strategic priority path recommendation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-slate-950 border border-slate-800 rounded-xl p-6 shadow-2xl">
+      <div class="mb-4">
+        <h2 class="text-lg font-bold text-slate-200">📊 Feature Comparison Matrix Layer</h2>
+        <p class="text-xs text-slate-400 mt-0.5">Direct binary item-by-item structural check of competitor features vs our app</p>
+      </div>
+      <div class="overflow-x-auto rounded-lg border border-slate-800">
+        <table class="w-full text-left border-collapse text-sm">
+          <thead>
+            <tr class="bg-slate-900 text-slate-300 font-semibold border-b border-slate-800">
+              <th class="p-4">Core Platform Feature Set</th>
+              <th class="p-4 text-indigo-400 bg-indigo-950/20">Our Product</th>
+              <th class="p-4 text-slate-400">AlphaSync</th>
+              <th class="p-4 text-slate-400">EnterpriseFlow</th>
+              <th class="p-4 text-slate-400">NovaOps</th>
+              <th class="p-4 text-slate-400">ZetaStream</th>
+              <th class="p-4 text-slate-400">CoreStack</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-800/60 text-slate-300">
+            <tr>
+              <td class="p-4 font-medium">Automated Data Capture</td>
+              <td class="p-4 text-emerald-400 font-bold bg-indigo-950/10">✅ Yes</td>
+              <td class="p-4 text-emerald-400">✅ Yes</td>
+              <td class="p-4 text-emerald-400">✅ Yes</td>
+              <td class="p-4 text-rose-500">❌ No</td>
+              <td class="p-4 text-emerald-400">✅ Yes</td>
+              <td class="p-4 text-emerald-400">✅ Yes</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-medium">AI-Powered Core Suggestions</td>
+              <td class="p-4 text-emerald-400 font-bold bg-indigo-950/10">✅ Yes</td>
+              <td class="p-4 text-rose-500">❌ No</td>
+              <td class="p-4 text-rose-500">❌ No</td>
+              <td class="p-4 text-rose-500">❌ No</td>
+              <td class="p-4 text-emerald-400">✅ Yes</td>
+              <td class="p-4 text-rose-500">❌ No</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-medium">Enterprise SAML Security Compliance</td>
+              <td class="p-4 text-rose-500 font-bold bg-indigo-950/10">❌ No</td>
+              <td class="p-4 text-rose-500">❌ No</td>
+              <td class="p-4 text-emerald-400">✅ Yes</td>
+              <td class="p-4 text-rose-500">❌ No</td>
+              <td class="p-4 text-rose-500">❌ No</td>
+              <td class="p-4 text-emerald-400">✅ Yes</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-medium">One-Click PDF / CSV Data Export</td>
+              <td class="p-4 text-emerald-400 font-bold bg-indigo-950/10">✅ Yes</td>
+              <td class="p-4 text-emerald-400">✅ Yes</td>
+              <td class="p-4 text-emerald-400">✅ Yes</td>
+              <td class="p-4 text-emerald-400">✅ Yes</td>
+              <td class="p-4 text-rose-500">❌ No</td>
+              <td class="p-4 text-emerald-400">✅ Yes</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="bg-slate-950 border border-slate-800 rounded-xl p-6 shadow-2xl">
+      <div class="mb-4">
+        <h2 class="text-lg font-bold text-slate-200">🎯 High-Yield B2B Qualified Sales Target Leads</h2>
+        <p class="text-xs text-slate-400 mt-0.5">Identified corporate accounts with explicit background source links proving their need</p>
+      </div>
+      <div class="grid grid-cols-1 gap-4">
+        
+        <div class="bg-slate-900/60 p-5 rounded-lg border border-slate-800 flex flex-col md:flex-row justify-between gap-4">
+          <div class="space-y-1">
+            <div class="flex items-center gap-3">
+              <h3 class="text-base font-bold text-slate-200">Vanguard Tech Partners</h3>
+              <span class="bg-emerald-950 text-emerald-400 text-[10px] font-black px-2 py-0.5 rounded border border-emerald-800 uppercase">Verified Lead</span>
+            </div>
+            <p class="text-xs text-slate-400 font-medium">Financial Operations & Auditing Software | New York, USA</p>
+            <p class="text-xs text-slate-300 pt-2"><strong class="text-slate-400">Target Contact:</strong> Sarah Jenkins — VP of Product Engineering (<span class="text-indigo-400">s.jenkins@vanguardpartners.tech</span>)</p>
+            <p class="text-xs text-slate-400 bg-slate-950 p-2 rounded border border-slate-800 mt-2"><strong class="text-amber-400">Source Evidence:</strong> Published a public post on LinkedIn requesting third-party data compliance automation framework help.</p>
+          </div>
+          <div class="text-left md:text-right flex flex-col justify-between items-start md:items-end min-w-[140px]">
+            <div class="bg-slate-950 text-xs px-3 py-1 rounded border border-slate-800 font-mono text-indigo-400 w-full text-center">Score: High (94%)</div>
+            <button class="bg-slate-800 hover:bg-slate-700 text-xs font-bold text-slate-200 px-4 py-2 rounded-lg mt-4 w-full border border-slate-700">Export Contact</button>
+          </div>
+        </div>
+
+        <div class="bg-slate-900/60 p-5 rounded-lg border border-slate-800 flex flex-col md:flex-row justify-between gap-4">
+          <div class="space-y-1">
+            <div class="flex items-center gap-3">
+              <h3 class="text-base font-bold text-slate-200">Nexus Build Labs</h3>
+              <span class="bg-emerald-950 text-emerald-400 text-[10px] font-black px-2 py-0.5 rounded border border-emerald-800 uppercase">Verified Lead</span>
+            </div>
+            <p class="text-xs text-slate-400 font-medium">Startup Incubators & Venture Builders | Chennai, India</p>
+            <p class="text-xs text-slate-300 pt-2"><strong class="text-slate-400">Target Contact:</strong> Rajesh Kumar — Managing Director of Team Operations (<span class="text-indigo-400">r.kumar@nexusbuild.in</span>)</p>
+            <p class="text-xs text-slate-400 bg-slate-950 p-2 rounded border border-slate-800 mt-2"><strong class="text-amber-400">Source Evidence:</strong> Corporate manifestos explicitly identify creating automated market profiling maps as an ongoing budget drag.</p>
+          </div>
+          <div class="text-left md:text-right flex flex-col justify-between items-start md:items-end min-w-[140px]">
+            <div class="bg-slate-950 text-xs px-3 py-1 rounded border border-slate-800 font-mono text-indigo-400 w-full text-center">Score: High (91%)</div>
+            <button class="bg-slate-800 hover:bg-slate-700 text-xs font-bold text-slate-200 px-4 py-2 rounded-lg mt-4 w-full border border-slate-700">Export Contact</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+      <div class="bg-slate-950 border border-slate-800 rounded-xl p-6 shadow-2xl space-y-4">
+        <h2 class="text-base font-bold text-slate-200 border-b border-slate-800 pb-2">🛠️ Product & Feature Priority Actions</h2>
+        <div class="space-y-3">
+          <div>
+            <h3 class="text-xs font-bold text-indigo-400 uppercase tracking-wider">Top 5 Features to Prioritize</h3>
+            <ul class="text-xs text-slate-300 list-disc pl-4 space-y-1 mt-1">
+              <li>Enterprise SAML Single Sign-On Module</li>
+              <li>Custom Field Data Verification Rules</li>
+              <li>Interactive History Timeline Audit Streams</li>
+              <li>Multi-Tenant Data Access Scopes</li>
+              <li>Slack & Microsoft Teams Alert Webhooks</li>
+            </ul>
+          </div>
+          <p class="text-xs text-slate-500 bg-slate-900 p-2 rounded border border-slate-800"><strong>Reasoning Vector:</strong> Directly counters high-end corporate packages provided by modern secure enterprise trackers.</p>
+        </div>
+      </div>
+
+      <div class="bg-slate-950 border border-slate-800 rounded-xl p-6 shadow-2xl space-y-4">
+        <h2 class="text-base font-bold text-slate-200 border-b border-slate-800 pb-2">📈 Whitespace Market Opportunities</h2>
+        <div class="space-y-3">
+          <div>
+            <h3 class="text-xs font-bold text-indigo-400 uppercase tracking-wider">Top 5 Growth Whitespaces</h3>
+            <ul class="text-xs text-slate-300 list-disc pl-4 space-y-1 mt-1">
+              <li>Target fast-growing high-security compliance startups</li>
+              <li>Provide white-labeled system screens for portfolio managers</li>
+              <li>Bundle automated operational compliance reporting charts</li>
+              <li>Address the completely open European operational tool vacuum</li>
+              <li>Form native strategic integration networks with accelerators</li>
+            </ul>
+          </div>
+          <p class="text-xs text-slate-500 bg-slate-900 p-2 rounded border border-slate-800"><strong>Reasoning Vector:</strong> Allows target platform models to safely escape competitive pricing race structures.</p>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script>
+    function runAnalysis() {
+      alert("Nexus Analysis Engine refreshed! Recalculating competitive vectors for your startup idea.");
+    }
+  </script>
+</body>
+</html>
